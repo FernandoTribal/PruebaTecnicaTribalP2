@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20231107 11:49:00.718" rpa="false" schemaversion="3">
+<suite id="s1" name="LoginTestCase" source="C:\development\robot-scripts\TribalTestSuite\Test_Cases\LoginTestCase.robot">
+<test id="s1-t1" name="Login Tribal" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231107 11:49:01.044" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20231107 11:49:01.043" endtime="20231107 11:49:03.164"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231107 11:49:06.166" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231107 11:49:03.165" endtime="20231107 11:49:06.166"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231107 11:49:06.166" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20231107 11:49:06.166" endtime="20231107 11:49:06.246"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231107 11:49:06.246" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20231107 11:49:06.246" endtime="20231107 11:49:06.303"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231107 11:49:09.311" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231107 11:49:06.303" endtime="20231107 11:49:09.311"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231107 11:49:09.311" level="INFO">Clicking button 'id=login-button'.</msg>
+<status status="PASS" starttime="20231107 11:49:09.311" endtime="20231107 11:49:09.375"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231107 11:49:12.379" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231107 11:49:09.375" endtime="20231107 11:49:12.379"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:.inventory_list .inventory_item:nth-child(1) .btn_inventory</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231107 11:49:12.379" level="INFO">Clicking button 'css:.inventory_list .inventory_item:nth-child(1) .btn_inventory'.</msg>
+<status status="PASS" starttime="20231107 11:49:12.379" endtime="20231107 11:49:12.418"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.shopping_cart_container</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231107 11:49:12.419" level="INFO">Clicking element 'css:.shopping_cart_container'.</msg>
+<status status="PASS" starttime="20231107 11:49:12.419" endtime="20231107 11:49:12.451"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231107 11:49:15.456" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231107 11:49:12.451" endtime="20231107 11:49:15.456"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:.cart_item .cart_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231107 11:49:15.457" level="INFO">Clicking button 'css:.cart_item .cart_button'.</msg>
+<status status="PASS" starttime="20231107 11:49:15.456" endtime="20231107 11:49:15.493"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231107 11:49:18.500" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231107 11:49:15.493" endtime="20231107 11:49:18.500"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231107 11:49:18.500" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<status status="PASS" starttime="20231107 11:49:18.500" endtime="20231107 11:49:18.538"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231107 11:49:21.550" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231107 11:49:18.538" endtime="20231107 11:49:21.550"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231107 11:49:21.551" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<status status="PASS" starttime="20231107 11:49:21.550" endtime="20231107 11:49:21.582"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231107 11:49:24.596" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231107 11:49:21.583" endtime="20231107 11:49:24.596"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231107 11:49:24.596" endtime="20231107 11:49:26.771"/>
+</kw>
+<doc>LoginTestSuite</doc>
+<tag>LoginTestCase1ValidCredentials</tag>
+<status status="PASS" starttime="20231107 11:49:01.043" endtime="20231107 11:49:26.771"/>
+</test>
+<status status="PASS" starttime="20231107 11:49:00.720" endtime="20231107 11:49:26.772"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">LoginTestCase1ValidCredentials</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginTestCase">LoginTestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
